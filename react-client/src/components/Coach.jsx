@@ -2,30 +2,64 @@ import React from 'react';
 
 
 
+class Coach extends React.Component {
+  constructor(props){
+    super(props)
+  }
+
+  render(){
+    var name = this.props.data.map(el=>el.FirstName)
+    var age = this.props.data.map(el =>el.Age)
+    var position = this.props.data.map(el=>el.Position)
+    return (
+    <div>
+      {console.log(this.props)}
+    <div className="card">
+      <div className="container">
+           
+        <h4><b>Name :{name[0]}</b></h4> 
+        <p>Age: {age[0]} </p>
+        <p>Position : {position[0]} </p> 
+      </div>
+    </div>
+    <div className="card">
+      <div className="container">
+           
+        <h4><b>Name :{name[1]}</b></h4> 
+        <p>Age: {age[1]} </p>
+        <p>Position : {position[1]} </p> 
+      </div>
+    </div>
+    <div className="card">
+      <div className="container">
+           
+        <h4><b>Name :{name[2]}</b></h4> 
+        <p>Age: {age[2]} </p>
+        <p>Position : {position[2]} </p> 
+      </div>
+    </div>
+    <div className="card">
+      <div className="container">
+           
+        <h4><b>Name :{name[3]}</b></h4> 
+        <p>Age: {age[3]} </p>
+        <p>Position : {position[3]} </p> 
+      </div>
+    </div>
+    <div className="card">
+      <div className="container">
+           
+        <h4><b>Name :{name[4]}</b></h4> 
+        <p>Age: {age[4]} </p>
+        <p>Position : {position[4]} </p> 
+      </div>
+    </div>
+    
+    </div>
+    )
+  }
+}
 
 
-const Coach = (props) => (
-  <div>
-<div className="card">
-  <img  src='https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/131208590_106149918034088_676597496906110843_o.jpg?_nc_cat=107&ccb=1-3&_nc_sid=e3f864&_nc_ohc=sKBUx5Xkm2UAX_Cf6-U&_nc_ht=scontent.ftun4-1.fna&oh=60f1f0a95b9e10a80a69a1499086d0e6&oe=6070E781' alt="Avatar"  style={{width:'100%'}}  />
-  <div className="container">
-       
-    <h4><b>Name :John Doe</b></h4> 
-    <p>Age: 25 </p>
-    <p>Architect & Engineer</p> 
-  </div>
-</div>
-<div className="card1">
-  <img  src='https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/131208590_106149918034088_676597496906110843_o.jpg?_nc_cat=107&ccb=1-3&_nc_sid=e3f864&_nc_ohc=sKBUx5Xkm2UAX_Cf6-U&_nc_ht=scontent.ftun4-1.fna&oh=60f1f0a95b9e10a80a69a1499086d0e6&oe=6070E781' alt="Avatar"  style={{width:'100%'}}  />
-  <div className="container">
-       
-    <h4><b>Name :John Doe</b></h4> 
-    <p>Age: 25 </p>
-    <p>Architect & Engineer</p> 
-  </div>
-</div>
-</div>
-
-)
 
 export default Coach;

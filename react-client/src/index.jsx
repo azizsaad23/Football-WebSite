@@ -36,7 +36,7 @@ renderView() {
     return <Objectif />
   } 
   if(view ==='admin'){
-    return <Coach />
+    return <Coach data={this.state.Coach} />
   } 
   if(view==='join'){
     return <Join/>

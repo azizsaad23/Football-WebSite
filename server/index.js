@@ -17,7 +17,7 @@ app.get('/api/coach',function(req,res){
   })
 })
 app.post('/api/player', function(req,res){
-  console.log(req.body.Name)
+  console.log("req",req.body)
   db.addPlayer([req.body.Name, req.body.age, req.body.categorie_id], function(err,result){
    if(err) res.status(500)
    console.log(result)
