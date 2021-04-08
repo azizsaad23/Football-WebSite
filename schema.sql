@@ -10,6 +10,7 @@ CREATE TABLE Coach (
  LastName varchar(25),
  Age int NOT NULL,
  Position varchar(25),
+ image_url varchar(250),
  PRIMARY KEY (id)
 );
 CREATE TABLE Categories (
@@ -39,7 +40,7 @@ FOREIGN KEY (Categorie_id) REFERENCES  Categories(id)
 
 INSERT INTO Coach(FirstName, LastName, Age, Position) VALUES("Ezzeddine", "Saad", 53, "Owner & Principal Coach" );
 INSERT INTO Coach(FirstName, LastName, Age, Position) VALUES("Tarek", "Omri", 40, "GK Coach" );
-INSERT INTO Coach(FirstName, LastName, Age, Position) VALUES("Adnen", "Sallemi", 45, "Coach" );
+INSERT INTO Coach(FirstName, LastName, Age, Position, image_url) VALUES("Adnen", "Sallemi", 45, "Coach", "https://scontent.fnbe1-2.fna.fbcdn.net/v/t1.0-9/118147799_1259205641081599_9117165447254325246_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=nhjZC9DH1i8AX_zqTQa&_nc_ht=scontent.fnbe1-2.fna&oh=2e72d3c4c428443f27b68014999b2368&oe=6074303C" );
 INSERT INTO Coach(FirstName, LastName, Age, Position) VALUES("Aziz", "Saad", 23, "Learner Coach" );
 INSERT INTO Coach(FirstName, LastName, Age, Position) VALUES("Dali", "Ben Chaaben", 23, "Assistant GK coach" );
 

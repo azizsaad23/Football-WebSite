@@ -13,46 +13,14 @@ class Coach extends React.Component {
     var position = this.props.data.map(el=>el.Position)
     return (
     <div>
-      {console.log(this.props)}
+      
     <div className="card">
-      <div className="container">
-           
-        <h4><b>Name :{name[0]}</b></h4> 
-        <p>Age: {age[0]} </p>
-        <p>Position : {position[0]} </p> 
-      </div>
-    </div>
-    <div className="card">
-      <div className="container">
-           
-        <h4><b>Name :{name[1]}</b></h4> 
-        <p>Age: {age[1]} </p>
-        <p>Position : {position[1]} </p> 
-      </div>
-    </div>
-    <div className="card">
-      <div className="container">
-           
-        <h4><b>Name :{name[2]}</b></h4> 
-        <p>Age: {age[2]} </p>
-        <p>Position : {position[2]} </p> 
-      </div>
-    </div>
-    <div className="card">
-      <div className="container">
-           
-        <h4><b>Name :{name[3]}</b></h4> 
-        <p>Age: {age[3]} </p>
-        <p>Position : {position[3]} </p> 
-      </div>
-    </div>
-    <div className="card">
-      <div className="container">
-           
-        <h4><b>Name :{name[4]}</b></h4> 
-        <p>Age: {age[4]} </p>
-        <p>Position : {position[4]} </p> 
-      </div>
+   {this.props.data.map(el=><div className="container">  
+         
+        <h4><b>Name :{el.FirstName}</b></h4> 
+        <p>Age:{el.Age} </p>
+        <p>Position :{el.Position} </p> 
+      </div>)}
     </div>
     
     </div>
